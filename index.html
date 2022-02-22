@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hello there and welcome! I had a lot of sweat and fun building this game. And when I was done, I was thinking that it could use a bit of sparkle. I'm a complete fan of Josh Comeau. So when I went out on the internet to find some sparkle functionality, I was tickled to find René Rehme's jquery implementation of Josh's React idea.
+See Josh -- https://www.joshwcomeau.com/react/animated-sparkles-in-react/
+See René -- https://renerehme.dev/blog/animated-sparkles-in-jquery -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Word</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Unlock&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+<!-- adding sparkle -->
+    <link rel="stylesheet" href = "css/sparkle.css"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="js/script.js" defer></script>
+<!-- adding sparkle -->
+    <script src="js/sparkle.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <img class="logo" src="img/logo.png" alt="Guess The Word" />
+      </h1>
+      <!-- const message -->
+      <p class="message"></p>
+      <!-- const wordInProgress -->
+      <p class="word-in-progress"></p>
+      <!-- const remainingGuessesElement -->
+      <!-- let remainingGuessesSpan -->
+      <p class="remaining">You have <span>8 guesses</span> remaining.</p>
+      <!-- const guessedLettersElement -->
+      <ul class="guessed-letters"></ul>
+      <form action="" class="guess-form">
+        <label for="letter">Type one letter:</label>
+        <!-- const letterInput -->
+        <input type="text" name="letter" class="letter" />
+        <div class="form-element button-element">
+          <!-- const guessLetterButton -->
+          <button class="guess">Guess!</button>
+        </div>
+      </form>
+      <!-- const playAgainButton -->
+      <button class="play-again hide">Play Again!</button>
+    </div>
+  </body>
+
+</html>
